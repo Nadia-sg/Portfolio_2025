@@ -14,4 +14,4 @@ Font Awesome
 
 Mi portfolio:
 
- <img src="Assets/img/rsz_portfolio-captura.png" alt="porfolio>"
+![Captura del portfolio](Assets/img/rsz_portfolio-captura.png)
