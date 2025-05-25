@@ -1,0 +1,582 @@
+/*///////////////// AJUSTES GENERALES//////////////////*/
+
+@font-face {
+  font-family: "MiFuente";
+  src: url("../Assets/fonts/Alata-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FuenteSecundaria";
+  src: url("../Assets/fonts/PoiretOne-Regular.ttf") format("truetype");
+}
+
+* {
+  background-color: #454558;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-left: 50px;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #f1e4db;
+}
+
+/*///////////////// NAV BAR//////////////////*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 300px;
+  color: #f1e4db;
+  position: sticky;
+  top: 0;
+  font-family: "MiFuente";
+}
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul.menu li a {
+  color: #f1e4db;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav ul.menu li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #dea8a7;
+  text-decoration-thickness: 5px;
+}
+
+/*///////////////// INICIO //////////////////*/
+
+section {
+  min-height: 100vh;
+  overflow: visible;
+  scroll-margin-top: 100px;
+  height: auto;
+}
+
+section#inicio {
+  display: flex;
+  justify-content: center;
+  padding: 20px 200px 160px 200px;
+  height: auto;
+  overflow: visible;
+  flex-wrap: wrap;
+  margin-top: 120px;
+}
+
+
+.contenido {
+  display: flex;
+  align-items: center;
+  gap: 80px; /* espacio entre texto e imagen */
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  font-family: "MiFuente";
+}
+
+h1 {
+  color: #dea8a7;
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "MiFuente";
+  color: #f1e4db;
+  margin-left: 60px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea todo al inicio horizontalmente */
+}
+
+.texto h3,
+h4 {
+  font-size: 2rem; /* Tamaño del título */
+  color: #ffff; /* Color del texto */
+  font-family: "MiFuente";
+}
+
+.texto p {
+  font-size: 1rem;
+  color: #ffff;
+}
+#presentación {
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "FuenteSecundaria";
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.imagen {
+  flex: 1;
+}
+
+.imagen img {
+  width: 100%; /* Hace que la imagen ocupe todo el espacio disponible */
+  max-width: 500px;
+  height: auto;
+}
+.botones {
+  margin-top: 30px;
+  display: flex;
+  gap: 24px;
+}
+
+.btn {
+  background-color: #dea8a7;
+  color: #212830;
+  padding: 12px 40px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: medium;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f1e4dbff;
+  color: #212830;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  border: 2px solid #dea8a7;
+  color: #f1e4dbff;
+}
+
+.btn-secundario:hover {
+  background-color: #dea8a7;
+  color: #fff;
+}
+
+.redes {
+  margin-top: 20px;
+  margin-left: 120px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.redes img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+  transform: scale(1.2);
+}
+
+/*///////////////// ESTILO TABLA //////////////////*/
+table {
+  margin: 120px auto;
+  border-collapse: collapse;
+  font-family: "FuenteSecundaria";
+  font-size: 18px;
+  font-weight: 500;
+  min-height: 300px;
+  table-layout: fixed;
+  width: 60%;
+}
+
+th {
+  color: #dea8a7;
+  background-color: #363649;
+  padding: 12px;
+  text-align: center;
+}
+
+td {
+  padding: 30px;
+  text-align: left;
+  color: white;
+  margin-top: 15px;
+}
+
+td ul {
+  background-color: transparent; 
+  padding-left: 20px; 
+  margin: 0; 
+}
+
+td li {
+  list-style-type: none; 
+  margin-bottom: 20px;
+}
+
+
+/* Filas impares */
+tbody tr:nth-child(odd) td {
+  background-color: #363649;
+}
+
+/* Filas pares */
+tbody tr:nth-child(even) td {
+  background-color: #2b2b3a;
+}
+
+
+.item-icono {
+  display: flex;
+  align-items: center; 
+  gap: 8px; 
+}
+
+.item-icono i {
+  font-size: 20px;
+  color: #dea8a7;
+}
+
+/*///////////////// SERVICIOS //////////////////*/
+.cards-servicios {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.card-servicio {
+  background-color: #2b2b3a;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  height: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-servicio:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.icono-servicio {
+  font-size: 50px;
+  color: #dea8a7;
+  transition: transform 0.3s ease;
+  margin-bottom: 60px;
+  margin-top: 15PX;
+  background-color: transparent;
+}
+
+.card-servicio:hover .icono-servicio {
+  transform: scale(1.2);
+}
+
+.card-servicio h3 {
+  font-size: 2rem;
+  color: #f1e4db;
+  margin-bottom: 10px;
+  font-family: "MiFuente";
+  background-color: transparent;
+}
+
+.card-servicio p {
+  font-size: 1.5rem;
+  color: #f1e4db;
+  font-family: "FuenteSecundaria", sans-serif;
+  line-height: 1.4;
+  background-color: transparent;
+}
+
+/*///////////////// ESTILO FORMULARIO //////////////////*/
+form#formulario-contacto {
+  flex: 1;
+  background-color: #454558;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 2;
+  font-family: "MiFuente";
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  border: none;
+  font-family: "FuenteSecundaria", Arial, sans-serif;
+  background-color: #363649;
+}
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: "FuenteSecundaria", Arial, sans-serif;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  border: none;
+  resize: vertical;
+  background-color: #363649;
+}
+
+::placeholder {
+  color: rgb(174, 170, 170);
+  font-weight: 300;
+}
+
+form input[type="submit"] {
+  background-color: #dea8a7;
+  color: #212830;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  font-family: "MiFuente";
+}
+
+form input[type="submit"]:hover {
+  background-color: #f1e4db;
+}
+.contacto-contenedor {
+  display: flex;
+  width: 90%;
+  margin: 60px auto;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.imagen-contacto {
+  flex: 1;
+  position: relative;
+}
+
+.imagen-contacto img {
+  width: 100%;
+  max-height:420px;
+  object-fit: cover;
+  opacity: 0.4;
+  border-radius: 10px;
+}
+
+.frase-contacto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f1e4db;
+  font-family: "MiFuente";
+  font-size: 4.8rem;
+  font-weight: bold;
+  z-index: 2;
+  text-align: center;
+  width: 80%;
+  background-color: transparent;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* ----------------------------
+   Estilos generales (desktop)
+-----------------------------*/
+body {
+  font-family: "MiFuente";
+  margin: 0;
+  padding: 0;
+}
+
+/* Tablet Horizontal */
+@media (max-width: 1080px) {
+  section#inicio {
+    padding: 20px 50px 160px 50px;
+  }
+
+  .imagen {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+
+  .imagen img {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+  
+  .btn {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+
+  #presentación {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.logo {
+  margin-left: 40px;
+}
+
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: column;
+  }
+
+  .imagen img {
+    width: 100%;
+  }
+
+  .card-servicio {
+    width: 80%;
+  }
+
+  #formulario-contacto {
+    width: 90%;
+  }
+
+  .imagen-contacto img {
+  width: 100%;
+  max-height:420px;
+  object-fit: cover;
+  opacity: 0.4;
+  border-radius: 10px;
+}
+  
+  #presentación {
+  margin-top: 15px;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+  .imagen {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+
+  .imagen img {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+  table {
+  width: 95%; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  color: #f1e4db;
+}
+}
+
+/* Mobil 1 */
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+
+  .redes a img {
+    width: 30px;
+  }
+
+  .card-servicio {
+    width: 100%;
+  }
+
+.contacto-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.imagen-contacto {
+  width: 100%;
+  position: relative;
+}
+
+.imagen-contacto img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.frase-contacto {
+  font-size: 2rem; 
+  width: 80%;
+}
+
+.logo {
+  margin-left: 10px;
+}
+  #presentación {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+table {
+  margin: 80px auto;
+  border-collapse: collapse;
+  font-family: "FuenteSecundaria";
+  font-size: 12px;
+  font-weight: 500;
+  min-height: 150px;
+  width: auto;
+}
+
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #formulario-contacto input,
+  #formulario-contacto textarea {
+    width: 100%;
+  }
+  .logo {
+  margin-left: 10px;
+}
+}
